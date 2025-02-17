@@ -1,0 +1,62 @@
+<!-- filepath: /d:/Computer_Sekhoo/Computer-Seekho/ComputerSeekho/src/main/resources/templates/admissionEmailTemplate.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Received</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #407786;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            color: #777777;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Payment Received</h1>
+        </div>
+        <div class="content">
+            <p>Dear ${studentName},</p>
+            <p>we are pleased to inform you that we have received your payment of ${paymentAmount}</p>
+            <p>More Information:</p>
+            <p>Payment ID:- ${paymentID}</p>
+            <p>Payment Amount:- ${paymentAmount}</p>
+            <p>Payment Mode:- ${paymentMethod}</p>
+            <p>Payment Date:- ${paymentDate}</p>
+            <p>If you have any questions or need further assistance, please do not hesitate to contact us.</p>
+            <p>Best regards,</p>
+            <p>The Admissions Team</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 SM VITA. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
